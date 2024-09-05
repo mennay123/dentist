@@ -1,0 +1,233 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Catamaran", sans-serif;
+    line-height: 1.6;
+    color: #012126;
+    font-size: 1.1rem;
+  }
+  .nav {
+    position: fixed; /* Make the navbar fixed */
+    top: 0; /* Stick it to the top */
+    width: 100%; /* Full width of the viewport */
+    background-color: white; /* Background color of the navbar */
+    z-index: 1000; /* Ensure it stays above other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a slight shadow for visibility */
+    height: 70px;
+}
+
+.divv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.image{
+    width: 200px;
+    margin:0 12rem;
+    
+}
+
+a {
+    color: #02373f;
+    text-decoration: none;
+    padding: 0 10px;
+  }
+.ul{
+    cursor: pointer;
+     display: flex;
+     list-style: none;
+     padding: 0 5px;
+     justify-self: flex-end;
+}
+.nav a:hover {
+    color: #0d5588;
+    border-bottom: 1px solid #75b4bf;
+  }
+  .home{
+    background: url(ai-generated-dental-clinic-advertisment-background-with-copy-space-free-photo.jpg);
+    padding: 10rem 0;
+    background-repeat: no-repeat;
+   background-size: cover;
+    background-position:bottom;
+
+
+  }
+  h1{
+     font-size:32px;
+    color: #184f68;
+    padding: 0 6rem;
+}
+p{
+     margin: 1rem 0;
+     padding: 0 6rem;
+}
+.btn{
+    margin-left: 5rem;
+    margin-top: 2rem  ;
+    color: white;
+    border-radius: 30px;
+    background: #184f68;
+    padding: 0.8rem 1.8rem;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #75b4bf;
+  }
+ /*about*/
+.about-us-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: white;
+    max-width: 900px;
+    margin: 50px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.content-container {
+    margin-left: 20px;
+}
+
+.content-container h2 {
+    margin-bottom: 15px;
+    margin-left: 90px;
+}
+
+.content-container p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+/*conect*/
+.section-contact {
+    position: relative;
+    background: url(map.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+  }
+  
+  .contact-inner {
+    color: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    max-width: 860px;
+    padding: 5rem 1rem;
+  }
+  
+  .contact-inner h2 {
+    color: #012126;
+    margin-top: 1.2rem;
+    font-size: 1.5rem;
+  }
+  
+  .contact-inner p {
+    margin-top: 1.2rem;
+    font-size: 1.5rem;
+  }
+
+/* RESPONSIVE DESIGN */
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .divv {
+      flex-direction:column;
+      
+  }
+
+  .ul {
+      flex-direction: row;
+      align-items: center;
+      
+  }
+
+  .home {
+      padding: 5rem 0;
+  }
+
+  h1 {
+      font-size: 24px;
+  }
+
+  p {
+      font-size: 1rem;
+      padding: 0 2rem;
+  }
+
+  .about-us-section {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .content-container {
+      margin-left: 0;
+  }
+
+  .image-container img {
+      width: 100%;
+      height: auto;
+  }
+
+  .contact-inner h2 {
+      font-size: 1.2rem;
+  }
+
+  .contact-inner p {
+      font-size: 1.2rem;
+  }
+}
+
+/* Larger Desktop Styles */
+@media (min-width: 1024px) {
+  .divv {
+      padding: 0 50px;
+  }
+
+  .home {
+      padding: 12rem 0;
+  }
+
+  h1 {
+      font-size: 40px;
+  }
+
+  p {
+      font-size: 1.2rem;
+  }
+
+  .about-us-section {
+      max-width: 1200px;
+  }
+}
